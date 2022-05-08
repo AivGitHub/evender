@@ -1,0 +1,16 @@
+# Main
+__pycache__/
+migrations/
+.env/
+dist/
+kureta.egg-info/
+*.log
+
+# Project
+.idea/
+secure.py
+static/external_lib/
+media/
+
+# Databases
+db.sqlite3
