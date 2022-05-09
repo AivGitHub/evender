@@ -1,4 +1,5 @@
 from django.apps import AppConfig
+from django.core.management import call_command
 
 
 class AnalyticsConfig(AppConfig):
@@ -6,4 +7,4 @@ class AnalyticsConfig(AppConfig):
     name = 'analytics'
 
     def ready(self):
-        pass
+        call_command('process', '--start')
